@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8325D151CEF08D2001391EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D141CEF08D2001391EC /* AppDelegate.swift */; };
+		F8325D1A1CEF08D2001391EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8325D181CEF08D2001391EC /* Main.storyboard */; };
+		F8325D1F1CEF08D2001391EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8325D1D1CEF08D2001391EC /* LaunchScreen.storyboard */; };
+		F8325D2F1CEF093B001391EC /* FuturaPTBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8325D2A1CEF093B001391EC /* FuturaPTBold.otf */; };
+		F8325D301CEF093B001391EC /* FuturaPTDemi.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8325D2B1CEF093B001391EC /* FuturaPTDemi.otf */; };
+		F8325D311CEF093B001391EC /* Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8325D2C1CEF093B001391EC /* Proxima Nova Regular.otf */; };
+		F8325D321CEF093B001391EC /* Proxima Nova Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8325D2D1CEF093B001391EC /* Proxima Nova Semibold.otf */; };
+		F8325D331CEF093B001391EC /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8325D2E1CEF093B001391EC /* Proxima Nova Thin.otf */; };
+		F8325D371CEF0B1C001391EC /* TIPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D361CEF0B1C001391EC /* TIPopupVC.swift */; };
+		F8325D391CEF0B27001391EC /* TIMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D381CEF0B27001391EC /* TIMovieVC.swift */; };
+		F8325D3B1CEF0E40001391EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8325D3A1CEF0E40001391EC /* Assets.xcassets */; };
+		F8325D3D1CEF126F001391EC /* TIMovieTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D3C1CEF126F001391EC /* TIMovieTVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8325D111CEF08D2001391EC /* TestInnova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestInnova.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8325D141CEF08D2001391EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8325D191CEF08D2001391EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8325D1E1CEF08D2001391EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8325D201CEF08D2001391EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8325D2A1CEF093B001391EC /* FuturaPTBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBold.otf; sourceTree = "<group>"; };
+		F8325D2B1CEF093B001391EC /* FuturaPTDemi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTDemi.otf; sourceTree = "<group>"; };
+		F8325D2C1CEF093B001391EC /* Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Regular.otf"; sourceTree = "<group>"; };
+		F8325D2D1CEF093B001391EC /* Proxima Nova Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Semibold.otf"; sourceTree = "<group>"; };
+		F8325D2E1CEF093B001391EC /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		F8325D361CEF0B1C001391EC /* TIPopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIPopupVC.swift; sourceTree = "<group>"; };
+		F8325D381CEF0B27001391EC /* TIMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIMovieVC.swift; sourceTree = "<group>"; };
+		F8325D3A1CEF0E40001391EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8325D3C1CEF126F001391EC /* TIMovieTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIMovieTVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8325D0E1CEF08D2001391EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8325D081CEF08D2001391EC = {
+			isa = PBXGroup;
+			children = (
+				F8325D131CEF08D2001391EC /* TestInnova */,
+				F8325D121CEF08D2001391EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8325D121CEF08D2001391EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8325D111CEF08D2001391EC /* TestInnova.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8325D131CEF08D2001391EC /* TestInnova */ = {
+			isa = PBXGroup;
+			children = (
+				F8325D261CEF08DF001391EC /* App */,
+				F8325D271CEF08E3001391EC /* Controller */,
+				F8325D281CEF08EA001391EC /* View */,
+			);
+			path = TestInnova;
+			sourceTree = "<group>";
+		};
+		F8325D261CEF08DF001391EC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F8325D3A1CEF0E40001391EC /* Assets.xcassets */,
+				F8325D291CEF093B001391EC /* Fonts */,
+				F8325D141CEF08D2001391EC /* AppDelegate.swift */,
+				F8325D201CEF08D2001391EC /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		F8325D271CEF08E3001391EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8325D361CEF0B1C001391EC /* TIPopupVC.swift */,
+				F8325D381CEF0B27001391EC /* TIMovieVC.swift */,
+				F8325D3C1CEF126F001391EC /* TIMovieTVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F8325D281CEF08EA001391EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8325D181CEF08D2001391EC /* Main.storyboard */,
+				F8325D1D1CEF08D2001391EC /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F8325D291CEF093B001391EC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F8325D2A1CEF093B001391EC /* FuturaPTBold.otf */,
+				F8325D2B1CEF093B001391EC /* FuturaPTDemi.otf */,
+				F8325D2C1CEF093B001391EC /* Proxima Nova Regular.otf */,
+				F8325D2D1CEF093B001391EC /* Proxima Nova Semibold.otf */,
+				F8325D2E1CEF093B001391EC /* Proxima Nova Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8325D101CEF08D2001391EC /* TestInnova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8325D231CEF08D2001391EC /* Build configuration list for PBXNativeTarget "TestInnova" */;
+			buildPhases = (
+				F8325D0D1CEF08D2001391EC /* Sources */,
+				F8325D0E1CEF08D2001391EC /* Frameworks */,
+				F8325D0F1CEF08D2001391EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestInnova;
+			productName = TestInnova;
+			productReference = F8325D111CEF08D2001391EC /* TestInnova.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8325D091CEF08D2001391EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "ROMAN RESENCHUK";
+				TargetAttributes = {
+					F8325D101CEF08D2001391EC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F8325D0C1CEF08D2001391EC /* Build configuration list for PBXProject "TestInnova" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8325D081CEF08D2001391EC;
+			productRefGroup = F8325D121CEF08D2001391EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8325D101CEF08D2001391EC /* TestInnova */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8325D0F1CEF08D2001391EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8325D1F1CEF08D2001391EC /* LaunchScreen.storyboard in Resources */,
+				F8325D301CEF093B001391EC /* FuturaPTDemi.otf in Resources */,
+				F8325D331CEF093B001391EC /* Proxima Nova Thin.otf in Resources */,
+				F8325D311CEF093B001391EC /* Proxima Nova Regular.otf in Resources */,
+				F8325D1A1CEF08D2001391EC /* Main.storyboard in Resources */,
+				F8325D321CEF093B001391EC /* Proxima Nova Semibold.otf in Resources */,
+				F8325D3B1CEF0E40001391EC /* Assets.xcassets in Resources */,
+				F8325D2F1CEF093B001391EC /* FuturaPTBold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8325D0D1CEF08D2001391EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8325D391CEF0B27001391EC /* TIMovieVC.swift in Sources */,
+				F8325D3D1CEF126F001391EC /* TIMovieTVC.swift in Sources */,
+				F8325D371CEF0B1C001391EC /* TIPopupVC.swift in Sources */,
+				F8325D151CEF08D2001391EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8325D181CEF08D2001391EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8325D191CEF08D2001391EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8325D1D1CEF08D2001391EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8325D1E1CEF08D2001391EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8325D211CEF08D2001391EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8325D221CEF08D2001391EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8325D241CEF08D2001391EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestInnova/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romacv.TestInnova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8325D251CEF08D2001391EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestInnova/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romacv.TestInnova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8325D0C1CEF08D2001391EC /* Build configuration list for PBXProject "TestInnova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8325D211CEF08D2001391EC /* Debug */,
+				F8325D221CEF08D2001391EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8325D231CEF08D2001391EC /* Build configuration list for PBXNativeTarget "TestInnova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8325D241CEF08D2001391EC /* Debug */,
+				F8325D251CEF08D2001391EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8325D091CEF08D2001391EC /* Project object */;
+}
