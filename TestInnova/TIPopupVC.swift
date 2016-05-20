@@ -9,23 +9,26 @@
 import UIKit
 
 class TIPopupVC: UIViewController {
-    let identifier = "PricesCollViewCell"
+    
     @IBOutlet weak var btnForever: TIBorderButton!
     @IBOutlet weak var btnForRent: TIBorderButton!
     @IBOutlet weak var pursacheButton: TIBorderButton!
     @IBOutlet weak var activityMerchant: UIActivityIndicatorView!
     @IBOutlet weak var collectionViewPrices: UICollectionView!
+    
+    let identifier = "PricesCollViewCell"
     var pricesArray: NSArray = []
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.pricesArray = [["price": "299 ₽", "type": "DVD качество"],
-        ["price": "399 ₽", "type": "FullHD качество"]]
-        
-        self.btnForever.applyBorders()
-        self.btnForRent.removeBorders()
+        initUI()
+    }
+    
+    // MARK: - Actions
+    func initUI() {
         self.pursacheButton.applyBorders()
+        self.tapPurchaseType(self.btnForever)
     }
     
     @IBAction func tapLeftScroll(sender: AnyObject) {
@@ -45,6 +48,39 @@ class TIPopupVC: UIViewController {
         }
     }
     
+    @IBAction func tapStartPurchase(sender: AnyObject) {
+        self.activityMerchant.startAnimating();
+        self.pursacheButton.setTitle("", forState: .Normal)
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC))) // todo
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            
+            self.pursacheButton.setTitle("Купить".uppercaseString, forState: .Normal)
+            self.activityMerchant.stopAnimating();
+            
+            self.performSegueWithIdentifier("ShowSuccessPursacheSegue", sender: nil)
+        }
+    }
+    
+    @IBAction func tapPurchaseType(sender: AnyObject) {
+        
+        self.btnForever.removeBorders()
+        self.btnForRent.removeBorders()
+        let currentBtn = sender as! TIBorderButton
+        currentBtn.applyBorders()
+        
+        if (currentBtn == self.btnForever) {
+            self.pricesArray = [["price": "299 $", "type": "DVD качество"],
+                                ["price": "399 $", "type": "FullHD качество"],
+                                ["price": "429 $", "type": "4k качество"]]
+        }
+        else if (currentBtn == self.btnForRent) {
+            self.pricesArray = [["price": "19 $", "type": "DVD качество"],
+                                ["price": "29 $", "type": "FullHD качество"]]
+        }
+        self.collectionViewPrices.reloadData()
+    }
+    
+    // MARK: - CollectionView
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.pricesArray.count
     }
@@ -58,21 +94,5 @@ class TIPopupVC: UIViewController {
         return cell
     }
     
-    @IBAction func tapStartPurchase(sender: AnyObject) {
-        self.activityMerchant.startAnimating();
-        self.pursacheButton.setTitle("", forState: .Normal)
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC))) // todo
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-            
-            self.pursacheButton.setTitle("Купить".uppercaseString, forState: .Normal)
-            self.activityMerchant.stopAnimating();
-        }
-    }
-    @IBAction func tapPurchaseType(sender: AnyObject) {
-        
-        self.btnForever.removeBorders()
-        self.btnForRent.removeBorders()
-        let currentBtn = sender as! TIBorderButton
-        currentBtn.applyBorders()
-    }
+    
 }

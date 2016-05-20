@@ -22,6 +22,9 @@
 		F8325D3F1CEF2169001391EC /* TIStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D3E1CEF2169001391EC /* TIStartVC.swift */; };
 		F8325D411CEF2C43001391EC /* TIBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D401CEF2C43001391EC /* TIBorderButton.swift */; };
 		F8325D431CEF3E45001391EC /* TIPricesCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D421CEF3E45001391EC /* TIPricesCollViewCell.swift */; };
+		F8C3F8DB1CEF62CE007FFD51 /* TISuccessPursacheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3F8DA1CEF62CE007FFD51 /* TISuccessPursacheVC.swift */; };
+		F8C3F8DE1CEF6BF5007FFD51 /* TIMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3F8DD1CEF6BF5007FFD51 /* TIMovieModel.swift */; };
+		F8C3F8E01CEF6C03007FFD51 /* TIPricesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3F8DF1CEF6C03007FFD51 /* TIPricesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		F8325D3E1CEF2169001391EC /* TIStartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIStartVC.swift; sourceTree = "<group>"; };
 		F8325D401CEF2C43001391EC /* TIBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIBorderButton.swift; sourceTree = "<group>"; };
 		F8325D421CEF3E45001391EC /* TIPricesCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIPricesCollViewCell.swift; sourceTree = "<group>"; };
+		F8C3F8DA1CEF62CE007FFD51 /* TISuccessPursacheVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TISuccessPursacheVC.swift; sourceTree = "<group>"; };
+		F8C3F8DD1CEF6BF5007FFD51 /* TIMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIMovieModel.swift; sourceTree = "<group>"; };
+		F8C3F8DF1CEF6C03007FFD51 /* TIPricesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIPricesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			children = (
 				F8325D261CEF08DF001391EC /* App */,
 				F8325D271CEF08E3001391EC /* Controller */,
+				F8C3F8DC1CEF6BCF007FFD51 /* Model */,
 				F8325D281CEF08EA001391EC /* View */,
 			);
 			path = TestInnova;
@@ -99,6 +106,7 @@
 				F8325D381CEF0B27001391EC /* TIMovieVC.swift */,
 				F8325D3C1CEF126F001391EC /* TIMovieTVC.swift */,
 				F8325D3E1CEF2169001391EC /* TIStartVC.swift */,
+				F8C3F8DA1CEF62CE007FFD51 /* TISuccessPursacheVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -124,6 +132,15 @@
 				F8325D2E1CEF093B001391EC /* Proxima Nova Thin.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F8C3F8DC1CEF6BCF007FFD51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8C3F8DD1CEF6BF5007FFD51 /* TIMovieModel.swift */,
+				F8C3F8DF1CEF6C03007FFD51 /* TIPricesModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +223,11 @@
 				F8325D3D1CEF126F001391EC /* TIMovieTVC.swift in Sources */,
 				F8325D411CEF2C43001391EC /* TIBorderButton.swift in Sources */,
 				F8325D371CEF0B1C001391EC /* TIPopupVC.swift in Sources */,
+				F8C3F8E01CEF6C03007FFD51 /* TIPricesModel.swift in Sources */,
 				F8325D431CEF3E45001391EC /* TIPricesCollViewCell.swift in Sources */,
 				F8325D3F1CEF2169001391EC /* TIStartVC.swift in Sources */,
+				F8C3F8DB1CEF62CE007FFD51 /* TISuccessPursacheVC.swift in Sources */,
+				F8C3F8DE1CEF6BF5007FFD51 /* TIMovieModel.swift in Sources */,
 				F8325D151CEF08D2001391EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

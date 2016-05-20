@@ -1,5 +1,5 @@
 //
-//  TIMovieVC.swift
+//  TISuccessPursacheVC.swift
 //  TestInnova
 //
 //  Created by ROMAN RESENCHUK on 20.05.16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TIMovieVC: UIViewController {
+class TISuccessPursacheVC: UIViewController {
     
     // MARK: - Lifecycle
     override func viewDidLoad() {

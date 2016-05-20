@@ -10,12 +10,14 @@ import UIKit
 
 class TIStartVC: UIViewController {
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    // MARK: - Actions
     @IBAction func backFromMovie(segue: UIStoryboardSegue) {
-        print("Back button pressed")
+        print("Movie closed")
     }
 
 }

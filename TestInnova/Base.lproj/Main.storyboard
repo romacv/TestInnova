@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="FuturaPTBold.otf">
@@ -11,6 +12,7 @@
             <string>FuturaPT-Bold</string>
         </mutableArray>
         <mutableArray key="FuturaPTDemi.otf">
+            <string>FuturaPT-Demi</string>
             <string>FuturaPT-Demi</string>
         </mutableArray>
         <mutableArray key="Proxima Nova Regular.otf">
@@ -26,6 +28,7 @@
             <string>ProximaNova-Semibold</string>
         </mutableArray>
         <mutableArray key="Proxima Nova Thin.otf">
+            <string>ProximaNovaT-Thin</string>
             <string>ProximaNovaT-Thin</string>
         </mutableArray>
     </customFonts>
@@ -43,10 +46,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKd-Ad-Oub">
-                                    <rect key="frame" x="0.0" y="22" width="50" height="55"/>
+                                    <rect key="frame" x="0.0" y="22" width="52" height="55"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="55" id="6Ay-9U-oPw"/>
-                                        <constraint firstAttribute="width" constant="50" id="cNr-af-qK2"/>
+                                        <constraint firstAttribute="width" constant="52" id="cNr-af-qK2"/>
                                     </constraints>
                                     <state key="normal" image="back"/>
                                     <connections>
@@ -95,7 +98,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NCa-sS-IWE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="NCa-sS-IWE">
                                         <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NCa-sS-IWE" id="bcX-XC-ceP">
@@ -128,11 +131,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1G-pb-H6l">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1G-pb-H6l">
                                                     <rect key="frame" x="66" y="21" width="245" height="44"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="A4068CF4-929D-498D-8BC5-FF093F79DA4B"/>
-                                                    <string key="text">Первый Мститель:
-Противостояние</string>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -154,7 +155,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CIVIL WAR (2016)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASe-ho-egZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shortcut" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASe-ho-egZ">
                                                     <rect key="frame" x="76" y="1" width="225" height="13"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="7581F002-1B0A-463B-8388-1BA6261CAC82"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="11"/>
@@ -181,22 +182,22 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WS-Kc-4wC">
                                                     <rect key="frame" x="88" y="0.0" width="200" height="14"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waB-J4-M2S">
-                                                            <rect key="frame" x="64" y="2" width="21" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waB-J4-M2S">
+                                                            <rect key="frame" x="62" y="2" width="21" height="14"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="78134BF8-66DD-4615-9C1A-01CC42258240"/>
                                                             <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="11"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zib-mh-Yx7">
-                                                            <rect key="frame" x="105" y="2" width="17" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zib-mh-Yx7">
+                                                            <rect key="frame" x="103" y="2" width="17" height="14"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="5247F858-9534-4D4D-9384-13D5F86C0873"/>
                                                             <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="11"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filmoval" translatesAutoresizingMaskIntoConstraints="NO" id="wqi-G1-S2A">
-                                                            <rect key="frame" x="90" y="4" width="10" height="10"/>
+                                                            <rect key="frame" x="88" y="4" width="10" height="10"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="DE5AC4A7-6FBD-4932-A43E-484308441DF3"/>
                                                             <userDefinedRuntimeAttributes>
@@ -206,7 +207,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imdb" translatesAutoresizingMaskIntoConstraints="NO" id="iMr-wc-vnk">
-                                                            <rect key="frame" x="43" y="4" width="16" height="10"/>
+                                                            <rect key="frame" x="41" y="4" width="16" height="10"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="8B21D449-74A8-443C-8C36-D7B568737324"/>
                                                             <userDefinedRuntimeAttributes>
@@ -216,7 +217,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="h0T-Um-FKh">
-                                                            <rect key="frame" x="128" y="-1" width="30" height="20"/>
+                                                            <rect key="frame" x="126" y="-1" width="30" height="20"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="49EE3FF4-B312-4740-ABA8-56A86A976E12"/>
                                                             <userDefinedRuntimeAttributes>
@@ -231,8 +232,8 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12+" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQp-KE-ErM">
-                                                            <rect key="frame" x="134" y="2" width="18" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0+" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQp-KE-ErM">
+                                                            <rect key="frame" x="132" y="2" width="18" height="14"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="1DBDFFE8-7CF9-40BB-88F5-47C18F92D3A9"/>
                                                             <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="11"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,20 +254,20 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieDescription" rowHeight="223" id="vWa-FY-TSv">
-                                        <rect key="frame" x="0.0" y="443" width="375" height="223"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieDescription" rowHeight="224" id="vWa-FY-TSv">
+                                        <rect key="frame" x="0.0" y="443" width="375" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vWa-FY-TSv" id="AnH-M0-wOB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8af-5H-e6b">
-                                                    <rect key="frame" x="38" y="0.0" width="300" height="123"/>
+                                                    <rect key="frame" x="38" y="0.0" width="300" height="124"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="32613A4A-5B2C-4A59-806F-4B8AD74570B1"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="MKP-Yy-pU5"/>
                                                     </constraints>
-                                                    <string key="text">Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы. Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы.</string>
+                                                    <string key="text">Text multiline Text multilineText multilineText multilineText multilineText multilineText multilineText multilineText multilineText multilineText multilineText multilineText multiline</string>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -290,6 +291,15 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageViewPoster" destination="AGf-Rm-H6m" id="gew-MY-Q9R"/>
+                        <outlet property="labelAgeRating" destination="xQp-KE-ErM" id="1rw-ix-oAS"/>
+                        <outlet property="labelIMDB" destination="waB-J4-M2S" id="G9i-oE-1y0"/>
+                        <outlet property="labelName" destination="w1G-pb-H6l" id="jD3-he-ZlW"/>
+                        <outlet property="labelRating" destination="zib-mh-Yx7" id="5tp-Ic-GOt"/>
+                        <outlet property="labelShortCut" destination="ASe-ho-egZ" id="wxZ-pb-cle"/>
+                        <outlet property="labelTextDescription" destination="8af-5H-e6b" id="iG0-pE-itf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zz8-PT-HZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ioY-eZ-edV" userLabel="Exit" sceneMemberID="exit"/>
@@ -316,7 +326,7 @@
                                 <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Show movie" image="Bitmap"/>
+                                <state key="normal" title="Подробнее" image="Bitmap"/>
                                 <connections>
                                     <segue destination="KG2-gR-oaZ" kind="presentation" identifier="ShowMovieSegue" modalTransitionStyle="crossDissolve" id="gmV-SC-HrF"/>
                                 </connections>
@@ -688,12 +698,65 @@
                         <outlet property="btnForever" destination="cvI-YU-tuU" id="RLO-tO-Vby"/>
                         <outlet property="collectionViewPrices" destination="GJp-j7-ZbN" id="EjH-4Z-fVN"/>
                         <outlet property="pursacheButton" destination="EBk-cm-oYv" id="myA-Rw-Dsf"/>
+                        <segue destination="feD-hl-2nh" kind="presentation" identifier="ShowSuccessPursacheSegue" id="Xcx-lq-EOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOr-78-23r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L4r-tC-3eQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-123.5" y="1215.5"/>
+        </scene>
+        <!--Success PursacheVC-->
+        <scene sceneID="UVT-Kg-WHE">
+            <objects>
+                <viewController id="feD-hl-2nh" customClass="TISuccessPursacheVC" customModule="TestInnova" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OuH-AF-9nj"/>
+                        <viewControllerLayoutGuide type="bottom" id="fko-Rh-a9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fGF-5y-tcI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgJ-Pw-WBb">
+                                <rect key="frame" x="15" y="309" width="345" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RTi-PI-rXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Закрыть"/>
+                                <connections>
+                                    <segue destination="mgI-hm-aGE" kind="unwind" unwindAction="backFromMovie:" id="tPb-Wf-ETC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем с покупкой" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-dv-Vmq">
+                                <rect key="frame" x="14" y="183" width="347" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YeA-SG-ZcO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNovaT-Thin" family="Proxima Nova" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rgw-dv-Vmq" firstAttribute="leading" secondItem="fGF-5y-tcI" secondAttribute="leading" constant="14" id="3hM-S3-yh1"/>
+                            <constraint firstAttribute="trailing" secondItem="Rgw-dv-Vmq" secondAttribute="trailing" constant="14" id="7Pr-XX-azZ"/>
+                            <constraint firstItem="DgJ-Pw-WBb" firstAttribute="centerY" secondItem="fGF-5y-tcI" secondAttribute="centerY" id="Bp7-nw-Bir"/>
+                            <constraint firstItem="DgJ-Pw-WBb" firstAttribute="top" secondItem="Rgw-dv-Vmq" secondAttribute="bottom" constant="26" id="O4v-Nd-W7g"/>
+                            <constraint firstItem="DgJ-Pw-WBb" firstAttribute="leading" secondItem="fGF-5y-tcI" secondAttribute="leadingMargin" constant="-1" id="R6g-Ly-dhe"/>
+                            <constraint firstItem="DgJ-Pw-WBb" firstAttribute="centerX" secondItem="fGF-5y-tcI" secondAttribute="centerX" id="jCp-Rc-e2C"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRl-VE-ZLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mgI-hm-aGE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="332.5" y="1215.5"/>
         </scene>
     </scenes>
     <resources>
