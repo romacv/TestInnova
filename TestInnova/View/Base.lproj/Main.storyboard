@@ -731,7 +731,7 @@
                                     <segue destination="mgI-hm-aGE" kind="unwind" unwindAction="backFromMovie:" id="tPb-Wf-ETC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем с покупкой" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-dv-Vmq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем с покупкой" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-dv-Vmq">
                                 <rect key="frame" x="14" y="183" width="347" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YeA-SG-ZcO"/>
