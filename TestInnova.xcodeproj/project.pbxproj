@@ -360,6 +360,7 @@
 				F8325D251CEF08D2001391EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

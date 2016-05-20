@@ -9,5 +9,6 @@
 import UIKit
 
 class TIPricesCollViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var labelPrice: UILabel!
+    @IBOutlet weak var labelType: UILabel!
 }

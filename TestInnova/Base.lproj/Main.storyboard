@@ -266,7 +266,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="MKP-Yy-pU5"/>
                                                     </constraints>
-                                                    <mutableString key="text">Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы. Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы.</mutableString>
+                                                    <string key="text">Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы. Мстители под руководством Капитана Америки оказываются участниками разрушительного инцидента, имеющего международный масштаб. Эти события заставляют правительство задуматься над тем, чтобы начать регулировать действия всех людей с особыми способностями, введя «Акт о регистрации супергероев», вынуждая их раскрыть свои личности и работать на правительственные службы.</string>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -468,7 +468,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tapForever:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="JvC-rY-pXJ"/>
+                                                    <action selector="tapPurchaseType:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="xIS-wp-4cf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV4-X2-0TM">
@@ -486,7 +486,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEi-e5-4Ha">
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEi-e5-4Ha" customClass="TIBorderButton" customModule="TestInnova" customModuleProvider="target">
                                                 <rect key="frame" x="203" y="20" width="80" height="30"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="F599EC10-1E31-4510-BCF5-800EE79F923C"/>
                                                 <constraints>
@@ -498,7 +498,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tapForRent:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="dz3-Ye-T3B"/>
+                                                    <action selector="tapPurchaseType:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="6Fn-6j-AMD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -541,32 +541,41 @@
                                         <state key="normal" title="КУПИТЬ">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapStartPurchase:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="O9x-Xz-rpI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ac-zg-tzC">
-                                        <rect key="frame" x="80" y="141" width="11" height="13"/>
+                                        <rect key="frame" x="74" y="141" width="22" height="13"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" identifier="32FD19AF-C57E-42F2-8E65-2CA3A05720F5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="13" id="2fT-3m-3me"/>
-                                            <constraint firstAttribute="width" constant="11" id="KwF-pw-OGM"/>
+                                            <constraint firstAttribute="width" constant="22" id="KwF-pw-OGM"/>
                                         </constraints>
                                         <state key="normal" image="left"/>
+                                        <connections>
+                                            <action selector="tapLeftScroll:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="0Gt-US-Wsq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be7-pg-tiF">
-                                        <rect key="frame" x="284" y="136" width="11" height="22"/>
+                                        <rect key="frame" x="279" y="136" width="22" height="22"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" identifier="1B474926-D827-4967-8E87-FD60C21CD638"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="aOG-MG-oA3"/>
-                                            <constraint firstAttribute="width" constant="11" id="nhb-zh-cSY"/>
+                                            <constraint firstAttribute="width" constant="22" id="nhb-zh-cSY"/>
                                         </constraints>
                                         <state key="normal" image="right"/>
+                                        <connections>
+                                            <action selector="tapRightScroll:" destination="hGj-Nn-E4K" eventType="touchUpInside" id="683-B1-aOM"/>
+                                        </connections>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GJp-j7-ZbN">
-                                        <rect key="frame" x="91" y="96" width="193" height="91"/>
+                                        <rect key="frame" x="96" y="96" width="183" height="91"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="193" id="Q1S-09-C91"/>
+                                            <constraint firstAttribute="width" constant="183" id="Q1S-09-C91"/>
                                             <constraint firstAttribute="height" constant="91" id="hS1-gz-h3P"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="1xq-iB-IX2">
@@ -613,6 +622,10 @@
                                                     <constraint firstItem="D0U-Np-I6z" firstAttribute="top" secondItem="lYG-Xu-ynC" secondAttribute="bottom" id="olK-r5-bX3"/>
                                                     <constraint firstAttribute="trailing" secondItem="lYG-Xu-ynC" secondAttribute="trailing" id="wcg-du-JMh"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="labelPrice" destination="lYG-Xu-ynC" id="h6l-Pa-zca"/>
+                                                    <outlet property="labelType" destination="D0U-Np-I6z" id="t78-4q-Bgb"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -620,8 +633,8 @@
                                             <outlet property="delegate" destination="hGj-Nn-E4K" id="Obc-ot-VgA"/>
                                         </connections>
                                     </collectionView>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="HzD-gE-d5G">
-                                        <rect key="frame" x="253" y="234" width="20" height="20"/>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="HzD-gE-d5G">
+                                        <rect key="frame" x="178" y="234" width="20" height="20"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.090196078431372548" green="0.52549019607843139" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
@@ -637,11 +650,12 @@
                                     <constraint firstItem="GJp-j7-ZbN" firstAttribute="centerX" secondItem="G6k-u8-Kau" secondAttribute="centerX" id="MBH-eO-jWz"/>
                                     <constraint firstItem="be7-pg-tiF" firstAttribute="leading" secondItem="GJp-j7-ZbN" secondAttribute="trailing" id="NO7-V1-HgW"/>
                                     <constraint firstItem="RTo-Sq-Ovw" firstAttribute="leading" secondItem="G6k-u8-Kau" secondAttribute="leading" id="YTf-tJ-CMG"/>
-                                    <constraint firstItem="HzD-gE-d5G" firstAttribute="trailing" secondItem="EBk-cm-oYv" secondAttribute="trailing" constant="-20" id="bie-QO-NR9"/>
                                     <constraint firstAttribute="height" constant="294" id="d7S-dq-nNY"/>
                                     <constraint firstItem="HzD-gE-d5G" firstAttribute="bottom" secondItem="EBk-cm-oYv" secondAttribute="bottom" constant="-20" id="dWU-6h-dLM"/>
+                                    <constraint firstItem="HzD-gE-d5G" firstAttribute="trailing" secondItem="EBk-cm-oYv" secondAttribute="trailing" constant="-95" id="k08-LK-yEH"/>
                                     <constraint firstItem="RTo-Sq-Ovw" firstAttribute="top" secondItem="G6k-u8-Kau" secondAttribute="top" id="rP6-E3-vpP"/>
                                     <constraint firstItem="HzD-gE-d5G" firstAttribute="top" secondItem="EBk-cm-oYv" secondAttribute="top" constant="20" id="uzt-2N-ebX"/>
+                                    <constraint firstItem="HzD-gE-d5G" firstAttribute="leading" secondItem="EBk-cm-oYv" secondAttribute="leading" constant="95" id="zoJ-lo-HSW"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
@@ -668,6 +682,13 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityMerchant" destination="HzD-gE-d5G" id="MuS-yi-sfG"/>
+                        <outlet property="btnForRent" destination="ZEi-e5-4Ha" id="KOc-qV-eO9"/>
+                        <outlet property="btnForever" destination="cvI-YU-tuU" id="RLO-tO-Vby"/>
+                        <outlet property="collectionViewPrices" destination="GJp-j7-ZbN" id="EjH-4Z-fVN"/>
+                        <outlet property="pursacheButton" destination="EBk-cm-oYv" id="myA-Rw-Dsf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOr-78-23r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L4r-tC-3eQ" userLabel="Exit" sceneMemberID="exit"/>
