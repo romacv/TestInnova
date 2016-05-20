@@ -20,6 +20,7 @@
 		F8325D3B1CEF0E40001391EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8325D3A1CEF0E40001391EC /* Assets.xcassets */; };
 		F8325D3D1CEF126F001391EC /* TIMovieTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D3C1CEF126F001391EC /* TIMovieTVC.swift */; };
 		F8325D3F1CEF2169001391EC /* TIStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D3E1CEF2169001391EC /* TIStartVC.swift */; };
+		F8325D411CEF2C43001391EC /* TIBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325D401CEF2C43001391EC /* TIBorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F8325D3A1CEF0E40001391EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8325D3C1CEF126F001391EC /* TIMovieTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIMovieTVC.swift; sourceTree = "<group>"; };
 		F8325D3E1CEF2169001391EC /* TIStartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIStartVC.swift; sourceTree = "<group>"; };
+		F8325D401CEF2C43001391EC /* TIBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIBorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				F8325D181CEF08D2001391EC /* Main.storyboard */,
 				F8325D1D1CEF08D2001391EC /* LaunchScreen.storyboard */,
+				F8325D401CEF2C43001391EC /* TIBorderButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				F8325D391CEF0B27001391EC /* TIMovieVC.swift in Sources */,
 				F8325D3D1CEF126F001391EC /* TIMovieTVC.swift in Sources */,
+				F8325D411CEF2C43001391EC /* TIBorderButton.swift in Sources */,
 				F8325D371CEF0B1C001391EC /* TIPopupVC.swift in Sources */,
 				F8325D3F1CEF2169001391EC /* TIStartVC.swift in Sources */,
 				F8325D151CEF08D2001391EC /* AppDelegate.swift in Sources */,
