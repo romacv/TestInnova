@@ -9,7 +9,7 @@
 import UIKit
 
 class TIPopupVC: UIViewController {
-
+    let identifier = "PricesCollViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +31,22 @@ class TIPopupVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 12
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! TIPricesCollViewCell
+    
+    
+    return cell
+    }
+    
+    @IBAction func tapForever(sender: AnyObject) {
+        let button = sender as! TIBorderButton
+        button.
+    }
+    
+    @IBAction func tapForRent(sender: AnyObject) {
+    }
 }
