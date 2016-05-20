@@ -69,13 +69,12 @@ class TIPopupVC: UIViewController {
         currentBtn.applyBorders()
         
         if (currentBtn == self.btnForever) {
-            self.pricesArray = [["price": "299 $", "type": "DVD качество"],
-                                ["price": "399 $", "type": "FullHD качество"],
-                                ["price": "429 $", "type": "4k качество"]]
+            self.pricesArray = [TIPricesModel.createMockFour(),
+                                TIPricesModel.createMockThree()]
         }
         else if (currentBtn == self.btnForRent) {
-            self.pricesArray = [["price": "19 $", "type": "DVD качество"],
-                                ["price": "29 $", "type": "FullHD качество"]]
+            self.pricesArray = [TIPricesModel.createMockOne(),
+                                TIPricesModel.createMockTwo()]
         }
         self.collectionViewPrices.reloadData()
     }
@@ -87,9 +86,9 @@ class TIPopupVC: UIViewController {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! TIPricesCollViewCell
-        let type = self.pricesArray[indexPath.row].objectForKey("type") as? String
-        cell.labelType.text = type?.uppercaseString
-        cell.labelPrice.text = self.pricesArray[indexPath.row].objectForKey("price") as? String
+        let pricesModel = self.pricesArray[indexPath.row] as! TIPricesModel
+        cell.labelType.text = pricesModel.type?.uppercaseString
+        cell.labelPrice.text = pricesModel.price!.stringValue + pricesModel.currency!
         
         return cell
     }
