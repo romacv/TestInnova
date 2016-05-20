@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KG2-gR-oaZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sr2-nk-dJ2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,6 +9,9 @@
             <string>FuturaPT-Bold</string>
             <string>FuturaPT-Bold</string>
             <string>FuturaPT-Bold</string>
+        </mutableArray>
+        <mutableArray key="FuturaPTDemi.otf">
+            <string>FuturaPT-Demi</string>
         </mutableArray>
         <mutableArray key="Proxima Nova Regular.otf">
             <string>ProximaNova-Regular</string>
@@ -31,7 +34,24 @@
                         <view key="tableHeaderView" contentMode="scaleToFill" id="BnF-lS-3z9">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKd-Ad-Oub">
+                                    <rect key="frame" x="0.0" y="22" width="50" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="6Ay-9U-oPw"/>
+                                        <constraint firstAttribute="width" constant="50" id="cNr-af-qK2"/>
+                                    </constraints>
+                                    <state key="normal" image="back"/>
+                                    <connections>
+                                        <segue destination="ioY-eZ-edV" kind="unwind" identifier="unwindMovieTVC" unwindAction="backFromMovie:" id="N6c-a7-z1Y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="MKd-Ad-Oub" firstAttribute="leading" secondItem="BnF-lS-3z9" secondAttribute="leading" id="Jza-CQ-uSj"/>
+                                <constraint firstItem="MKd-Ad-Oub" firstAttribute="top" secondItem="BnF-lS-3z9" secondAttribute="top" constant="22" id="iQi-Hg-ZVE"/>
+                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection id="8yr-2M-hdE">
@@ -82,6 +102,9 @@
                                                         <constraint firstAttribute="width" constant="120" id="YJV-wV-wCU"/>
                                                     </constraints>
                                                     <state key="normal" image="trailer"/>
+                                                    <connections>
+                                                        <action selector="tapTrailer:" destination="3ey-JN-Kaw" eventType="touchUpInside" id="DrA-ml-j7V"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -262,13 +285,57 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zz8-PT-HZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ioY-eZ-edV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="332.5" y="405.5"/>
+        </scene>
+        <!--StartVC-->
+        <scene sceneID="kbT-rM-3HB">
+            <objects>
+                <viewController storyboardIdentifier="StartVCScene" id="Sr2-nk-dJ2" customClass="TIStartVC" customModule="TestInnova" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7yf-RA-qlc"/>
+                        <viewControllerLayoutGuide type="bottom" id="po2-VF-sNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mhS-iC-T9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMs-KR-K24">
+                                <rect key="frame" x="15" y="221" width="345" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="226" id="vBr-zm-aUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Show movie" image="Bitmap"/>
+                                <connections>
+                                    <segue destination="KG2-gR-oaZ" kind="presentation" identifier="ShowMovieSegue" modalTransitionStyle="crossDissolve" id="gmV-SC-HrF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zMs-KR-K24" secondAttribute="trailing" constant="15" id="cP4-69-CAg"/>
+                            <constraint firstItem="zMs-KR-K24" firstAttribute="centerY" secondItem="mhS-iC-T9j" secondAttribute="centerY" id="q49-93-4gL"/>
+                            <constraint firstItem="zMs-KR-K24" firstAttribute="leading" secondItem="mhS-iC-T9j" secondAttribute="leading" constant="15" id="s6w-Hi-9wD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="xsf-Fk-cZP" kind="unwind" identifier="unwindStart" unwindAction="backFromMovie:" id="3YI-oN-cql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJ4-Gb-7JJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xsf-Fk-cZP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-614.5" y="405.5"/>
         </scene>
         <!--iMovieVC-->
         <scene sceneID="vhX-9o-2Cj">
             <objects>
-                <viewController id="KG2-gR-oaZ" customClass="TIMovieVC" customModule="TestInnova" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TIMovieVCScene" id="KG2-gR-oaZ" customClass="TIMovieVC" customModule="TestInnova" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ux-ab-BFB"/>
                         <viewControllerLayoutGuide type="bottom" id="uaS-C9-CDQ"/>
@@ -280,7 +347,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUr-re-a6Z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
-                                    <segue destination="3ey-JN-Kaw" kind="embed" id="yhk-gX-qaK"/>
+                                    <segue destination="3ey-JN-Kaw" kind="embed" identifier="MovieContainerSegue" id="yhk-gX-qaK"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXL-YA-3FG">
@@ -307,6 +374,9 @@
                                                 <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hGj-Nn-E4K" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="RFt-Ls-5wW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De0-gg-e57">
                                         <rect key="frame" x="293" y="46" width="51" height="50"/>
@@ -345,35 +415,50 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="XNp-wR-S89" kind="unwind" identifier="unwindMovieVC" unwindAction="closePopup:" id="WUJ-8D-J1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N88-xF-0bC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XNp-wR-S89" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-123.5" y="405.5"/>
         </scene>
         <!--PopupVC-->
         <scene sceneID="Ln4-vY-d36">
             <objects>
-                <viewController id="hGj-Nn-E4K" customClass="TIPopupVC" customModule="TestInnova" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TIPopupScene" id="hGj-Nn-E4K" customClass="TIPopupVC" customModule="TestInnova" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mz5-qt-PZ3"/>
                         <viewControllerLayoutGuide type="bottom" id="8OY-8t-iUo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AEU-6c-aVc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arD-9i-SfC">
+                                <rect key="frame" x="97" y="440" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="L4r-tC-3eQ" kind="unwind" identifier="unwindPopupVC" unwindAction="closePopup:" id="Buw-Hu-Pf2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOr-78-23r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="L4r-tC-3eQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="796" y="429"/>
+            <point key="canvasLocation" x="-123.5" y="1215.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Bitmap" width="151" height="226"/>
         <image name="Bookmark" width="51" height="50"/>
         <image name="Rectangle" width="31" height="21"/>
+        <image name="back" width="7" height="11"/>
         <image name="fadeImage" width="375" height="121"/>
         <image name="filmoval" width="10" height="10"/>
         <image name="imdb" width="17" height="10"/>

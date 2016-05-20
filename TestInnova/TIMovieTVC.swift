@@ -30,6 +30,22 @@ class TIMovieTVC: UITableViewController {
         
     }
 
+    @IBAction func tapTrailer(sender: AnyObject) {
+        // todo
+        let youtubeMovieCode = "NftSKKqZE0M" as String
+        var url = NSURL(string:"youtube://\(youtubeMovieCode)")!
+        if UIApplication.sharedApplication().canOpenURL(url)  {
+            UIApplication.sharedApplication().openURL(url)
+        } else {
+            url = NSURL(string:"https://www.youtube.com/watch?v=\(youtubeMovieCode)")!
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+    
+    @IBAction func closePopup(segue: UIStoryboardSegue) {
+        
+    }
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
