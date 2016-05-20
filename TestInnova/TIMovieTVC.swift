@@ -19,6 +19,7 @@ class TIMovieTVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.tableView.estimatedRowHeight = 2
+        self.tableView.backgroundView = UIImageView.init(image: UIImage.init(named: "Flattened_Image"))
     }
 
     
