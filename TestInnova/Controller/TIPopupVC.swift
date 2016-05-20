@@ -62,7 +62,6 @@ class TIPopupVC: UIViewController {
     }
     
     @IBAction func tapPurchaseType(sender: AnyObject) {
-        
         self.btnForever.removeBorders()
         self.btnForRent.removeBorders()
         let currentBtn = sender as! TIBorderButton
@@ -89,7 +88,6 @@ class TIPopupVC: UIViewController {
         let pricesModel = self.pricesArray[indexPath.row] as! TIPricesModel
         cell.labelType.text = pricesModel.type?.uppercaseString
         cell.labelPrice.text = pricesModel.price!.stringValue + pricesModel.currency!
-        
         return cell
     }
     

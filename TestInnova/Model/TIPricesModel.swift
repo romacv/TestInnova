@@ -21,6 +21,7 @@ class TIPricesModel: NSObject {
         model.type = "DVD-качество"
         return model
     }
+    
     class func createMockTwo() -> TIPricesModel {
         let model = TIPricesModel()
         model.price = 299
@@ -28,6 +29,7 @@ class TIPricesModel: NSObject {
         model.type = "HD-качество"
         return model
     }
+    
     class func createMockThree() -> TIPricesModel {
         let model = TIPricesModel()
         model.price = 399
@@ -35,6 +37,7 @@ class TIPricesModel: NSObject {
         model.type = "DVD-качество"
         return model
     }
+    
     class func createMockFour() -> TIPricesModel {
         let model = TIPricesModel()
         model.price = 499
